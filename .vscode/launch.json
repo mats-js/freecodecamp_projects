@@ -6,6 +6,15 @@
     "configurations": [
         {
             "name": "Launch Program",
+            "program": "${workspaceFolder}/phone_number_validator.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Launch Program",
             "program": "${workspaceFolder}/rot13_cipher.js",
             "request": "launch",
             "skipFiles": [
