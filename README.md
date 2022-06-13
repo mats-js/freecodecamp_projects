@@ -1,2 +1,4 @@
-# javascript_algorithms_and_data_structures_projects
-Five projects to be completed as part of the JavaScript Algorithms and Data Structures Certification at www.freecodecamp.org.
+# freecodecamp_projects
+Projects to be completed as part of the certifications at www.freecodecamp.org.
+Completed certifications:
+  JavaScript Algorithms and Data Structures Certification
