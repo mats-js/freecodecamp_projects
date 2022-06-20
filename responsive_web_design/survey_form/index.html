@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generic Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Generic Survey Form</h1>
+      <p id="description">Thank you for participating in our survey</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="details">
+          <label id="name-label">Please tell us your full name: <input id="name" type="text" placeholder="Awesome Joe" required /></label>
+          <label id="email-label">Please leave your email address here: <input id="email" type="email" placeholder="awesome.joe@gmail.com" required /></label>
+          <label id="number-label">How old are you? <input id="number" type="number" min="16" max="150" placeholder="18" required /></label>
+        </div>
+        <div class="status">
+          <p>What is your current role?</p>
+          <select id="dropdown">
+            <option>(please select one)</option>
+            <option>Student</option>
+            <option>Employee</option>
+            <option>Unemployed</option>
+          </select>
+        </div>
+        <div class="radio-recommend">
+          <p>Would you recommend our services to friends and family?</p>
+          <label><input type="radio" name="recommend" value="1" /> Definitely</label>
+          <label><input type="radio" name="recommend" value="2"/> Mostly</label>
+          <label><input type="radio" name="recommend" value="3"/> Not at all</label>
+        </div>
+        <div class="found">
+          <p>How did you hear about us? (check all that apply)</p>
+          <label><input type="checkbox" value="magazine"> Magazine</label>
+          <label><input type="checkbox" value="internet"> Internet</label>
+          <label><input type="checkbox" value="billboard"> Billboard</label>
+        </div>
+        <div class="comment">
+          <p>Anything else you would like us to know?</p>
+          <textarea placeholder="You rock!"></textarea>
+        </div>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </main>
+  </body>
+</html>

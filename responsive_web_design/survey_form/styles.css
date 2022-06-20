@@ -1,0 +1,28 @@
+html, body {
+  background: linear-gradient(180deg, #FFFFFF 60%, #BBBBBB);
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+
+h1, p, label {
+  width: 100%;
+  text-align: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  display: inline-block;
+}
+
+label, select, input, textarea {
+  display: block;
+  margin: 0.3rem auto;
+}
+
+.details, .status, .radio-recommend, .found, .comment  {
+  padding: 10px 0 0 0;
+}
