@@ -1,0 +1,151 @@
+:root {
+    --background-red: #be3144;
+    --background-gray: #303841;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+     font-family: 'Poppins', sans-serif;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: var(--background-red);
+  }
+  
+  #navbar ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    font-size: 22px;
+    gap: 2em;
+    padding-right: 2em;
+  }
+  
+  #navbar a {
+    color: white;
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  #welcome-section, #contact {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  #welcome-section {
+    background: linear-gradient(60deg, #444444 1%, #111111);
+  }
+  
+  #welcome-header, #projects-header, #contact-header {
+    text-align: center;
+    padding-top: 40vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    color: white;
+  }
+  
+  #welcome-subheader {
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 28px;
+    color: var(--background-red);
+  }
+  
+  #projects {
+    min-height: 100vh;
+    padding-bottom: 6rem;
+    background-color: #45567d;
+  }
+  
+  #projects-header {
+    padding: 6rem 0; 
+    font-size: 40px;
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  
+  .project-tile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin: 0 2rem;
+  }
+  
+  .project-tile div[class="project"] {
+    width: 400px;
+    height: 470px;
+  }
+  
+  .project-tile img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .project {
+    background: var(--background-gray);
+  }
+  
+  .project p {
+    height: 63px;
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  #contact, footer {
+    background: var(--background-gray);
+  }
+  
+  #contact-subheader {
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+  }
+  
+  #contact-subheader a {
+      color: var(--background-red);
+  }
+  
+  footer {
+    height: 70px;
+    border-top: 2px solid var(--background-red);
+  }
+  
+  footer p {
+    color: white;
+    height: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  
+  @media (max-width: 450px) {
+    .project-tile div[class="project"] {
+        width: 100%;
+        height: 100%;
+    }
+    .project-tile img {
+        height: 100%;
+    }
+  }
